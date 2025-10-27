@@ -1612,7 +1612,7 @@ export const MainContentSection = (): JSX.Element => {
               </div>
 
               <span className="font-text font-[number:var(--text-font-weight)] text-[#787687] text-[12px] sm:text-[length:var(--text-font-size)] tracking-[var(--text-letter-spacing)] leading-[var(--text-line-height)] [font-style:var(--text-font-style)]">
-                1 OSMO minimum stake required
+                1 OASIS minimum stake required
               </span>
             </div>
           </CardContent>

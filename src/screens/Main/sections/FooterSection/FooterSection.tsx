@@ -9,7 +9,7 @@ const footerColumns = [
   },
   {
     title: "Token",
-    links: ["OSMO", "CoinMarketCap", "CoinGecko", "Governance", "Vote"],
+    links: ["OASIS", "CoinMarketCap", "CoinGecko", "Governance", "Vote"],
   },
   {
     title: "Community",
