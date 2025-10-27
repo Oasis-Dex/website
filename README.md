@@ -46,3 +46,34 @@ pnpm build
 - Vite
 - Shadcn UI Components
 - Lucide Icons
+
+## Deployment
+
+### GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages.
+
+**To deploy:**
+
+1. Push your changes to the `main` branch:
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+
+2. Enable GitHub Pages in your repository:
+   - Go to **Settings** → **Pages**
+   - Under "Build and deployment", select **Source: GitHub Actions**
+
+3. The site will automatically deploy on every push to `main`
+
+Your site will be available at: `https://oasis-dex.github.io/website/`
+
+**Manual deployment:**
+- Go to the **Actions** tab → **Deploy to GitHub Pages** → **Run workflow**
+
+**Local production build:**
+```bash
+pnpm run deploy
+```
