@@ -1,6 +1,7 @@
 import { ChevronDownIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { getAssetPath } from "../../lib/assets";
 import { FooterSection } from "./sections/FooterSection";
 import { MainContentSection } from "./sections/MainContentSection";
 
@@ -28,14 +29,20 @@ export const Main = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="absolute h-full top-0 left-0 w-[37px] bg-[url(/assets/frame-2117937247-2.svg)] bg-[100%_100%]" />
+            <div 
+              className="absolute h-full top-0 left-0 w-[37px]" 
+              style={{ 
+                backgroundImage: `url(${getAssetPath("/assets/frame-2117937247-2.svg")})`,
+                backgroundSize: '100% 100%'
+              }} 
+            />
 
             <div className="absolute top-[5px] left-[38px] w-1.5 h-1.5 rounded-[3px] border-[0.7px] border-solid border-[#dd0f4b]" />
 
             <img
               className="absolute top-[5px] left-10 w-1 h-[5px]"
               alt="Star"
-              src="/assets/star-2.svg"
+              src={getAssetPath("/assets/star-2.svg")}
             />
           </div>
 
@@ -48,7 +55,7 @@ export const Main = (): JSX.Element => {
                       <img
                         className="relative w-1 h-1"
                         alt="Component"
-                        src="/assets/component-1.svg"
+                        src={getAssetPath("/assets/component-1.svg")}
                       />
                     </div>
                   </div>
@@ -79,7 +86,7 @@ export const Main = (): JSX.Element => {
       <img
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
         alt="Noise"
-        src="/assets/noise.svg"
+        src={getAssetPath("/assets/noise.svg")}
       />
     </div>
   );

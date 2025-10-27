@@ -1,6 +1,6 @@
 import { MessageCircleIcon, SendIcon, TwitterIcon } from "lucide-react";
-import React from "react";
 import { Separator } from "../../../../components/ui/separator";
+import { getAssetPath } from "../../../../lib/assets";
 
 const footerColumns = [
   {
@@ -40,7 +40,7 @@ export const FooterSection = (): JSX.Element => {
           <img
             className="w-[21px] h-[21px]"
             alt="Component"
-            src="/assets/component-1-4.svg"
+            src={getAssetPath("/assets/component-1-4.svg")}
           />
         </div>
         <Separator className="flex-1 bg-white" />
@@ -76,7 +76,7 @@ export const FooterSection = (): JSX.Element => {
       <img
         className="absolute top-[100px] right-0 w-[190px] h-[173px] object-cover"
         alt="Ion"
-        src="/assets/ion-1.png"
+        src={getAssetPath("/assets/ion-1.png")}
       />
 
       <div className="flex w-full items-center gap-2.5 px-0 py-6">
@@ -85,7 +85,7 @@ export const FooterSection = (): JSX.Element => {
           <img
             className="w-[21px] h-[21px]"
             alt="Component"
-            src="/assets/component-1-4.svg"
+            src={getAssetPath("/assets/component-1-4.svg")}
           />
         </div>
         <Separator className="flex-1 bg-white" />
@@ -103,14 +103,20 @@ export const FooterSection = (): JSX.Element => {
                 </div>
               </div>
 
-              <div className="absolute h-full top-0 left-0 w-[37px] bg-[url(/assets/frame-2117937247-1.svg)] bg-[100%_100%]" />
+              <div 
+                className="absolute h-full top-0 left-0 w-[37px]" 
+                style={{ 
+                  backgroundImage: `url(${getAssetPath("/assets/frame-2117937247-1.svg")})`,
+                  backgroundSize: '100% 100%'
+                }} 
+              />
 
               <div className="absolute top-[5px] left-[38px] w-1.5 h-1.5 rounded-[3px] border-[0.7px] border-solid border-[#dd0f4b]" />
 
               <img
                 className="absolute top-[5px] left-10 w-1 h-[5px]"
                 alt="Star"
-                src="/assets/star-2.svg"
+                src={getAssetPath("/assets/star-2.svg")}
               />
             </div>
 

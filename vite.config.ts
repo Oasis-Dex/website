@@ -6,7 +6,7 @@ import { defineConfig } from "vite";
 export default defineConfig(() => ({
   plugins: [react()],
   publicDir: "./static",
-  base: process.env.GITHUB_PAGES ? "/website/" : "./",
+  base: process.env.GITHUB_PAGES ? "/website/" : "/",
   css: {
     postcss: {
       plugins: [tailwind()],

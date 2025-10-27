@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { getAssetPath } from "../../../../lib/assets";
 
 const topVolumeData = [
   {
@@ -23,7 +24,7 @@ const topVolumeData = [
     symbol: "BTC",
     price: "$106,476.801",
     change: "4.41%",
-    icon: "/assets/image-btc.svg",
+    icon: getAssetPath("/assets/image-btc.svg"),
     isNegative: true,
   },
   {
@@ -31,7 +32,7 @@ const topVolumeData = [
     symbol: "ATOM",
     price: "$3.104",
     change: "7.44%",
-    icon: "/assets/image-atom.svg",
+    icon: getAssetPath("/assets/image-atom.svg"),
     isNegative: true,
   },
   {
@@ -39,7 +40,7 @@ const topVolumeData = [
     symbol: "OASIS",
     price: "$0.12",
     change: "6.7%",
-    icon: "/assets/vector-1.svg",
+    icon: getAssetPath("/assets/vector-1.svg"),
     isNegative: true,
   },
   {
@@ -47,7 +48,7 @@ const topVolumeData = [
     symbol: "XRP",
     price: "$2.261",
     change: "6.29%",
-    icon: "/assets/image-xrp-.svg",
+    icon: getAssetPath("/assets/image-xrp-.svg"),
     isNegative: true,
   },
 ];
@@ -58,7 +59,7 @@ const newTokensData = [
     symbol: "PHOTON",
     price: "$0.264",
     change: "11.18%",
-    icon: "/assets/image-photon.svg",
+    icon: getAssetPath("/assets/image-photon.svg"),
     isNegative: true,
   },
   {
@@ -66,7 +67,7 @@ const newTokensData = [
     symbol: "JURIS",
     price: "$3.104",
     change: "7.44%",
-    icon: "/assets/image-juris.svg",
+    icon: getAssetPath("/assets/image-juris.svg"),
     isNegative: true,
   },
   {
@@ -74,7 +75,7 @@ const newTokensData = [
     symbol: "PAXG.atom",
     price: null,
     change: null,
-    icon: "/assets/image-paxg.svg",
+    icon: getAssetPath("/assets/image-paxg.svg"),
     isNegative: false,
   },
   {
@@ -82,7 +83,7 @@ const newTokensData = [
     symbol: "Pryzm",
     price: "$0.002",
     change: "44.59%",
-    icon: "/assets/image-pryzm-.svg",
+    icon: getAssetPath("/assets/image-pryzm-.svg"),
     isNegative: true,
   },
 ];
@@ -92,13 +93,13 @@ const upcomingTokensData = [
     year: "2025",
     name: "Manifest",
     symbol: "MFX",
-    icon: "/assets/image-mfx-.svg",
+    icon: getAssetPath("/assets/image-mfx-.svg"),
   },
   {
     year: "2025",
     name: "Sunrise RISE",
     symbol: "RISE",
-    icon: "/assets/image-pryzm-.svg",
+    icon: getAssetPath("/assets/image-pryzm-.svg"),
   },
 ];
 
@@ -106,77 +107,77 @@ const tokenGridData = [
   {
     top: "top-96",
     left: "left-0",
-    icon: "/assets/image-24.svg",
+    icon: getAssetPath("/assets/image-24.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[266px]",
     left: "left-[22px]",
-    icon: "/assets/image-20.svg",
+    icon: getAssetPath("/assets/image-20.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[164px]",
     left: "left-[63px]",
-    icon: "/assets/image-16.svg",
+    icon: getAssetPath("/assets/image-16.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[71px]",
     left: "left-[156px]",
-    icon: "/assets/image-12.svg",
+    icon: getAssetPath("/assets/image-12.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-4",
     left: "left-[259px]",
-    icon: "/assets/image-07.svg",
+    icon: getAssetPath("/assets/image-07.svg"),
     change: "0%",
     isPositive: true,
   },
   {
     top: "top-0",
     left: "left-[379px]",
-    icon: "/assets/image-08.svg",
+    icon: getAssetPath("/assets/image-08.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-4",
     left: "left-[500px]",
-    icon: "/assets/image-09.svg",
+    icon: getAssetPath("/assets/image-09.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[71px]",
     left: "left-[602px]",
-    icon: "/assets/image-13.svg",
+    icon: getAssetPath("/assets/image-13.svg"),
     change: "0%",
     isPositive: true,
   },
   {
     top: "top-[164px]",
     left: "left-[686px]",
-    icon: "/assets/image-18.svg",
+    icon: getAssetPath("/assets/image-18.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[266px]",
     left: "left-[740px]",
-    icon: "/assets/image-22.svg",
+    icon: getAssetPath("/assets/image-22.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-96",
     left: "left-[760px]",
-    icon: "/assets/image-26.svg",
+    icon: getAssetPath("/assets/image-26.svg"),
     change: "0%",
     isPositive: false,
   },
@@ -186,63 +187,63 @@ const tokenGridDataSecondary = [
   {
     top: "top-[580px]",
     left: "left-0",
-    icon: "/assets/image-28.svg",
+    icon: getAssetPath("/assets/image-28.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[450px]",
     left: "left-2.5",
-    icon: "/assets/image-23.svg",
+    icon: getAssetPath("/assets/image-23.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[335px]",
     left: "left-[49px]",
-    icon: "/assets/image-15.svg",
+    icon: getAssetPath("/assets/image-15.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[222px]",
     left: "left-[108px]",
-    icon: "/assets/image-11.svg",
+    icon: getAssetPath("/assets/image-11.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[131px]",
     left: "left-[187px]",
-    icon: "/assets/image-06.svg",
+    icon: getAssetPath("/assets/image-06.svg"),
     change: "0%",
     isPositive: true,
   },
   {
     top: "top-[63px]",
     left: "left-[284px]",
-    icon: "/assets/image-01.svg",
+    icon: getAssetPath("/assets/image-01.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[19px]",
     left: "left-[388px]",
-    icon: "/assets/image-02.svg",
+    icon: getAssetPath("/assets/image-02.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-0",
     left: "left-[499px]",
-    icon: "/assets/image-03.svg",
+    icon: getAssetPath("/assets/image-03.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[19px]",
     left: "left-[611px]",
-    icon: "/assets/image-04.svg",
+    icon: getAssetPath("/assets/image-04.svg"),
     change: "0%",
     isPositive: false,
     opacity: "opacity-40",
@@ -250,42 +251,42 @@ const tokenGridDataSecondary = [
   {
     top: "top-[63px]",
     left: "left-[717px]",
-    icon: "/assets/image-05.svg",
+    icon: getAssetPath("/assets/image-05.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[131px]",
     left: "left-[811px]",
-    icon: "/assets/image-10.svg",
+    icon: getAssetPath("/assets/image-10.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[222px]",
     left: "left-[891px]",
-    icon: "/assets/image-14.svg",
+    icon: getAssetPath("/assets/image-14.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[335px]",
     left: "left-[947px]",
-    icon: "/assets/image-19.svg",
+    icon: getAssetPath("/assets/image-19.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[450px]",
     left: "left-[986px]",
-    icon: "/assets/image-27.svg",
+    icon: getAssetPath("/assets/image-27.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[580px]",
     left: "left-[995px]",
-    icon: "/assets/image-29.svg",
+    icon: getAssetPath("/assets/image-29.svg"),
     change: "0%",
     isPositive: false,
   },
@@ -295,49 +296,49 @@ const tokenGridDataCenter = [
   {
     top: "top-[218px]",
     left: "left-0",
-    icon: "/assets/image-xrp-.svg",
+    icon: getAssetPath("/assets/image-xrp-.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[108px]",
     left: "left-8",
-    icon: "/assets/image-tia.svg",
+    icon: getAssetPath("/assets/image-tia.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[30px]",
     left: "left-[124px]",
-    icon: "/assets/image-17.svg",
+    icon: getAssetPath("/assets/image-17.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-0",
     left: "left-[249px]",
-    icon: "/assets/image-btc.svg",
+    icon: getAssetPath("/assets/image-btc.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[30px]",
     left: "left-[374px]",
-    icon: "/assets/image-30.svg",
+    icon: getAssetPath("/assets/image-30.svg"),
     change: "0%",
     isPositive: true,
   },
   {
     top: "top-[108px]",
     left: "left-[466px]",
-    icon: "/assets/image-21.svg",
+    icon: getAssetPath("/assets/image-21.svg"),
     change: "0%",
     isPositive: false,
   },
   {
     top: "top-[218px]",
     left: "left-[499px]",
-    icon: "/assets/image-25.svg",
+    icon: getAssetPath("/assets/image-25.svg"),
     change: "0%",
     isPositive: false,
   },
@@ -348,47 +349,47 @@ const statsData = [
     icon: <RocketIcon className="w-6 h-6" />,
     title: "All Time Volume",
     value: "$42,712,947,434",
-    image: "/assets/image-small-glass.svg",
+    image: getAssetPath("/assets/image-small-glass.svg"),
   },
   {
     icon: <TrendingUpIcon className="w-6 h-6" />,
     title: "Assets on the Platform",
     value: "$258,426,293",
-    image: "/assets/group-1216373318.png",
+    image: getAssetPath("/assets/group-1216373318.png"),
   },
   {
     icon: <BarChart3Icon className="w-6 h-6" />,
     title: "24h trading volume",
     value: "$13,242,623",
-    image: "/assets/group-1216373319.png",
+    image: getAssetPath("/assets/group-1216373319.png"),
   },
 ];
 
 const defiFeatures = [
   {
-    icon: "/assets/icons-24-drop.svg",
+    icon: getAssetPath("/assets/icons-24-drop.svg"),
     badge: "100+ Chains",
     title: "Liquidity Pools",
     description:
       "Capital efficient pools with granular control, low-\nslippage, and over $72M supply side revenue for\nliquidity providers.",
-    image: "/assets/image.png",
+    image: getAssetPath("/assets/image.png"),
     imageClass: "absolute top-[42px] left-[169px] w-[261px] h-[261px]",
   },
   {
-    icon: "/assets/icons-24-infinity.svg",
+    icon: getAssetPath("/assets/icons-24-infinity.svg"),
     badge: "Powered by Levana",
     title: "Perpetuals",
     description: "Trade at up to 30x leverage or earn by providing\nliquidity.",
-    image: "/assets/image-1.png",
+    image: getAssetPath("/assets/image-1.png"),
     imageClass: "relative top-[-53px] left-[133px] w-[266px] h-[244px]",
   },
   {
-    icon: "/assets/icons-24-press.svg",
+    icon: getAssetPath("/assets/icons-24-press.svg"),
     badge: "Powered by Mars",
     title: "Margin Trading",
     description:
       "Lend and borrow assets on the largest lending and\nmargin trading platform in Cosmos.",
-    image: "/assets/image-2.png",
+    image: getAssetPath("/assets/image-2.png"),
     imageClass: "absolute -top-7 left-[202px] w-[197px] h-[197px]",
   },
 ];
@@ -399,30 +400,30 @@ const connectCards = [
     title: "Support",
     description:
       "New to it all? Need help? Our support team is\navailable 24/7.",
-    image: "/assets/group-1216373307-4.png",
+    image: getAssetPath("/assets/group-1216373307-4.png"),
   },
   {
     icon: <FileTextIcon className="w-6 h-6" />,
     title: "Blog",
     description:
       "Catch up on the latest developments and\nexplore our lively community.",
-    image: "/assets/group-1216373307-3.png",
+    image: getAssetPath("/assets/group-1216373307-3.png"),
   },
 ];
 
 const socialCards = [
   {
-    icon: "/assets/icons-24-x-twitter--icon.svg",
+    icon: getAssetPath("/assets/icons-24-x-twitter--icon.svg"),
     title: "X(Twitter)",
     handle: "@Oasiszone",
   },
   {
-    icon: "/assets/icons-24-telegram-icon.svg",
+    icon: getAssetPath("/assets/icons-24-telegram-icon.svg"),
     title: "Telegram",
     handle: "Oasis_chat",
   },
   {
-    icon: "/assets/icons-24-forum-icon.svg",
+    icon: getAssetPath("/assets/icons-24-forum-icon.svg"),
     title: "Forum",
     handle: "forum.Oasis.zone",
   },
@@ -433,43 +434,43 @@ const developerCards = [
     icon: <BookOpenIcon className="w-6 h-6" />,
     title: "Developers Docs",
     description: "Roll up your sleeves and start building.",
-    image: "/assets/group-33936-1.png",
+    image: getAssetPath("/assets/group-33936-1.png"),
   },
   {
     icon: <PiggyBankIcon className="w-6 h-6" />,
     title: "Grants",
     description: "Get funding to build something.",
-    image: "/assets/grants-illustration.png",
+    image: getAssetPath("/assets/grants-illustration.png"),
   },
   {
     icon: <GithubIcon className="w-6 h-6" />,
     title: "Github",
     description: "Oasis is open-source and audited.",
-    image: "/assets/github-illustration.png",
+    image: getAssetPath("/assets/github-illustration.png"),
   },
   {
     icon: <MessageSquareIcon className="w-6 h-6" />,
     title: "Discord",
     description: "Chat with fellow developers and validators.",
-    image: "/assets/image-1-1.png",
+    image: getAssetPath("/assets/image-1-1.png"),
   },
 ];
 
 const heroTokens = [
   {
-    icon: "/assets/component-2.svg",
+    icon: getAssetPath("/assets/component-2.svg"),
     symbol: "TIA",
   },
   {
-    icon: "/assets/image-btc.svg",
+    icon: getAssetPath("/assets/image-btc.svg"),
     symbol: "BTC",
   },
   {
-    icon: "/assets/image-atom.svg",
+    icon: getAssetPath("/assets/image-atom.svg"),
     symbol: "ATOM",
   },
   {
-    icon: "/assets/image-34.png",
+    icon: getAssetPath("/assets/image-34.png"),
     symbol: "OASIS",
   },
 ];
@@ -507,7 +508,7 @@ export const MainContentSection = (): JSX.Element => {
                         <img
                           className="absolute w-[66.67%] h-[95.45%] top-[2.27%] left-[16.67%]"
                           alt="Vector"
-                          src="/assets/vector-14.svg"
+                          src={getAssetPath("/assets/vector-14.svg")}
                         />
                       </div>
                     </div>
@@ -542,7 +543,7 @@ export const MainContentSection = (): JSX.Element => {
                       <img
                         className="absolute w-[66.67%] h-[95.45%] top-[2.27%] left-[16.67%] -rotate-180"
                         alt="Vector"
-                        src="/assets/vector-16.svg"
+                        src={getAssetPath("/assets/vector-16.svg")}
                       />
                     </div>
                   </div>
@@ -558,7 +559,7 @@ export const MainContentSection = (): JSX.Element => {
                       <img
                         className="w-[79px] h-[79px]"
                         alt="Image"
-                        src="/assets/image-34.png"
+                        src={getAssetPath("/assets/image-34.png")}
                       />
                     </div>
                   </div>
@@ -582,7 +583,7 @@ export const MainContentSection = (): JSX.Element => {
                       <img
                         className="w-12 h-12"
                         alt="Image USD"
-                        src="/assets/image-usd-.svg"
+                        src={getAssetPath("/assets/image-usd-.svg")}
                       />
 
                       <div className="inline-flex flex-col items-start">
@@ -614,7 +615,7 @@ export const MainContentSection = (): JSX.Element => {
                       <img
                         className="w-12 h-12"
                         alt="Image TIA"
-                        src="/assets/image-tia-1.svg"
+                        src={getAssetPath("/assets/image-tia-1.svg")}
                       />
 
                       <div className="inline-flex flex-col items-start">
@@ -640,7 +641,7 @@ export const MainContentSection = (): JSX.Element => {
                         <img
                           className="w-6 h-6"
                           alt="Icons arrow down"
-                          src="/assets/icons-24-arrow-down.svg"
+                          src={getAssetPath("/assets/icons-24-arrow-down.svg")}
                         />
                       </div>
                     </div>
@@ -660,7 +661,7 @@ export const MainContentSection = (): JSX.Element => {
                   <img
                     className="w-6 h-6"
                     alt="Icons arrow right"
-                    src="/assets/icons-24-arrow-right-up.svg"
+                    src={getAssetPath("/assets/icons-24-arrow-right-up.svg")}
                   />
                 </Button>
               </CardContent>
@@ -828,7 +829,7 @@ export const MainContentSection = (): JSX.Element => {
                   <img
                     className="w-6 h-6"
                     alt="Icons arrow right"
-                    src="/assets/icons-24-arrow-right-up.svg"
+                    src={getAssetPath("/assets/icons-24-arrow-right-up.svg")}
                   />
                 </div>
               </CardContent>
@@ -949,7 +950,7 @@ export const MainContentSection = (): JSX.Element => {
                 <img
                   className="w-[178.31px] h-[178.31px]"
                   alt="Image"
-                  src="/assets/image-34-1.png"
+                  src={getAssetPath("/assets/image-34-1.png")}
                 />
               </div>
             </div>
@@ -986,7 +987,7 @@ export const MainContentSection = (): JSX.Element => {
                 <img
                   className="w-[60px] h-[60px]"
                   alt="Component"
-                  src="/assets/component-1-3.svg"
+                  src={getAssetPath("/assets/component-1-3.svg")}
                 />
               </div>
 
@@ -1034,7 +1035,7 @@ export const MainContentSection = (): JSX.Element => {
               <img
                 className="w-[21px] h-[21px]"
                 alt="Component"
-                src="/assets/component-1-4.svg"
+                src={getAssetPath("/assets/component-1-4.svg")}
               />
             </div>
 
@@ -1057,7 +1058,7 @@ export const MainContentSection = (): JSX.Element => {
             <img
               className="w-[1408px] h-[408px]"
               alt="Mask group"
-              src="/assets/mask-group-1.svg"
+              src={getAssetPath("/assets/mask-group-1.svg")}
             />
 
             <p className="max-w-screen-sm text-[#ffffff80] whitespace-nowrap font-text font-[number:var(--text-font-weight)] text-[length:var(--text-font-size)] tracking-[var(--text-letter-spacing)] leading-[var(--text-line-height)] [font-style:var(--text-font-style)]">
@@ -1079,14 +1080,14 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[40.36%] h-[31.39%] top-[34.31%] left-[42.73%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group.png"
+                            src={getAssetPath("/assets/clip-path-group.png")}
                           />
 
                           <img
                             className="absolute w-[21.53%] h-[55.
 95%] top-[22.02%] left-[16.90%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group-1.png"
+                            src={getAssetPath("/assets/clip-path-group-1.png")}
                           />
                         </div>
                       </div>
@@ -1100,13 +1101,13 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[13.17%] h-[39.93%] top-[30.04%] left-[16.81%]"
                             alt="Vector"
-                            src="/assets/vector-10.svg"
+                            src={getAssetPath("/assets/vector-10.svg")}
                           />
 
                           <img
                             className="absolute w-[48.32%] h-[27.48%] top-[36.26%] left-[34.87%]"
                             alt="Vector"
-                            src="/assets/vector-4.svg"
+                            src={getAssetPath("/assets/vector-4.svg")}
                           />
                         </div>
                       </div>
@@ -1118,7 +1119,7 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[72.63%] h-[38.24%] top-[30.88%] left-[13.57%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group-2.png"
+                            src={getAssetPath("/assets/clip-path-group-2.png")}
                           />
                         </div>
                       </div>
@@ -1130,7 +1131,7 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[71.01%] h-[33.93%] top-[33.04%] left-[14.37%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group-3.png"
+                            src={getAssetPath("/assets/clip-path-group-3.png")}
                           />
                         </div>
                       </div>
@@ -1142,19 +1143,19 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[40.43%] h-[26.47%] top-[36.76%] left-[9.32%]"
                             alt="Vector"
-                            src="/assets/vector-18.svg"
+                            src={getAssetPath("/assets/vector-18.svg")}
                           />
 
                           <img
                             className="absolute w-[35.47%] h-[26.47%] top-[36.76%] left-[55.21%]"
                             alt="Vector"
-                            src="/assets/vector-19.svg"
+                            src={getAssetPath("/assets/vector-19.svg")}
                           />
 
                           <img
                             className="absolute w-[2.10%] h-[26.47%] top-[36.76%] left-[51.24%]"
                             alt="Vector"
-                            src="/assets/vector-7.svg"
+                            src={getAssetPath("/assets/vector-7.svg")}
                           />
                         </div>
                       </div>
@@ -1166,7 +1167,7 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[71.84%] h-[28.48%] top-[35.76%] left-[14.34%]"
                             alt="Vector"
-                            src="/assets/vector-2.svg"
+                            src={getAssetPath("/assets/vector-2.svg")}
                           />
                         </div>
                       </div>
@@ -1178,7 +1179,7 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[72.69%] h-[57.46%] top-[21.27%] left-[13.48%]"
                             alt="Vector"
-                            src="/assets/vector.png"
+                            src={getAssetPath("/assets/vector.png")}
                           />
                         </div>
                       </div>
@@ -1190,43 +1191,43 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[6.05%] h-[27.37%] top-[36.32%] left-[24.90%]"
                             alt="Vector"
-                            src="/assets/vector-3.svg"
+                            src={getAssetPath("/assets/vector-3.svg")}
                           />
 
                           <img
                             className="absolute w-[6.30%] h-[28.07%] top-[35.96%] left-[46.80%]"
                             alt="Vector"
-                            src="/assets/vector-5.svg"
+                            src={getAssetPath("/assets/vector-5.svg")}
                           />
 
                           <img
                             className="absolute w-[5.91%] h-[27.37%] top-[36.32%] left-[58.01%]"
                             alt="Vector"
-                            src="/assets/vector-12.svg"
+                            src={getAssetPath("/assets/vector-12.svg")}
                           />
 
                           <img
                             className="absolute w-[7.99%] h-[27.37%] top-[36.32%] left-[79.01%]"
                             alt="Vector"
-                            src="/assets/vector-11.svg"
+                            src={getAssetPath("/assets/vector-11.svg")}
                           />
 
                           <img
                             className="absolute w-[6.83%] h-[27.37%] top-[36.32%] left-[13.49%]"
                             alt="Vector"
-                            src="/assets/vector-6.svg"
+                            src={getAssetPath("/assets/vector-6.svg")}
                           />
 
                           <img
                             className="absolute w-[6.83%] h-[27.37%] top-[36.32%] left-[35.52%]"
                             alt="Vector"
-                            src="/assets/vector-8.svg"
+                            src={getAssetPath("/assets/vector-8.svg")}
                           />
 
                           <img
                             className="absolute w-[6.83%] h-[27.37%] top-[36.32%] left-[68.58%]"
                             alt="Vector"
-                            src="/assets/vector-8.svg"
+                            src={getAssetPath("/assets/vector-8.svg")}
                           />
                         </div>
                       </div>
@@ -1237,7 +1238,7 @@ export const MainContentSection = (): JSX.Element => {
                         <img
                           className="w-[268.07px] h-[54px]"
                           alt="Component"
-                          src="/assets/component-1-5.svg"
+                          src={getAssetPath("/assets/component-1-5.svg")}
                         />
                       </div>
                     </div>
@@ -1248,13 +1249,13 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[56.35%] h-[23.86%] top-[38.07%] left-[31.34%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group-4.png"
+                            src={getAssetPath("/assets/clip-path-group-4.png")}
                           />
 
                           <img
                             className="absolute w-[13.33%] h-[47.73%] top-[26.14%] left-[12.31%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group-5.png"
+                            src={getAssetPath("/assets/clip-path-group-5.png")}
                           />
                         </div>
                       </div>
@@ -1266,7 +1267,7 @@ export const MainContentSection = (): JSX.Element => {
                           <img
                             className="absolute w-[72.73%] h-[30.79%] top-[34.61%] left-[13.64%]"
                             alt="Clip path group"
-                            src="/assets/clip-path-group-6.png"
+                            src={getAssetPath("/assets/clip-path-group-6.png")}
                           />
                         </div>
                       </div>
@@ -1380,7 +1381,7 @@ export const MainContentSection = (): JSX.Element => {
                       <img
                         className="w-6 h-6"
                         alt="Icons flash"
-                        src="/assets/icons-24-flash-1.svg"
+                        src={getAssetPath("/assets/icons-24-flash-1.svg")}
                       />
                     </div>
 
@@ -1395,7 +1396,7 @@ export const MainContentSection = (): JSX.Element => {
                     <img
                       className="max-h-[180px] max-w-[300px] object-contain"
                       alt="Image"
-                      src="/assets/image-3.png"
+                      src={getAssetPath("/assets/image-3.png")}
                     />
                   </div>
 
@@ -1418,7 +1419,7 @@ export const MainContentSection = (): JSX.Element => {
                       <img
                         className="w-6 h-6"
                         alt="Icons flash"
-                        src="/assets/icons-24-flash.svg"
+                        src={getAssetPath("/assets/icons-24-flash.svg")}
                       />
                     </div>
 
@@ -1433,7 +1434,7 @@ export const MainContentSection = (): JSX.Element => {
                     <img
                       className="max-h-[180px] max-w-[350px] object-contain"
                       alt="Image"
-                      src="/assets/mask-group.png"
+                      src={getAssetPath("/assets/mask-group.png")}
                     />
                   </div>
 
@@ -1544,14 +1545,14 @@ export const MainContentSection = (): JSX.Element => {
             <img
               className="hidden lg:block absolute top-0 left-[637px] w-[772px] h-[546px] object-cover"
               alt="Screenshot"
-              src="/assets/screenshot-2025-10-17-at-18-50-28-1.png"
+              src={getAssetPath("/assets/screenshot-2025-10-17-at-18-50-28-1.png")}
             />
 
             <div className="hidden lg:block absolute top-[-19px] left-[877px] w-[440px] h-[584px]">
               <img
                 className="absolute top-0 -left-0.5 w-[442px] h-[584px]"
                 alt="Image"
-                src="/assets/image-423.png"
+                src={getAssetPath("/assets/image-423.png")}
               />
 
               <div className="absolute top-[101px] -left-0.5 w-[45px] h-[245px] bg-white" />
@@ -1606,7 +1607,7 @@ export const MainContentSection = (): JSX.Element => {
                 <img
                   className="w-[15px] h-[15px]"
                   alt="Component"
-                  src="/assets/component-1-6.svg"
+                  src={getAssetPath("/assets/component-1-6.svg")}
                 />
               </div>
 
