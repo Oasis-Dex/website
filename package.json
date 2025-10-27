@@ -4,6 +4,7 @@
   "type": "module",
   "name": "oasis-defi",
   "description": "Oasis - The premier decentralized crypto exchange",
+  "packageManager": "pnpm@9.12.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

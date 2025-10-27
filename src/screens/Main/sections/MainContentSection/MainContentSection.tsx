@@ -40,7 +40,7 @@ const topVolumeData = [
     symbol: "OASIS",
     price: "$0.12",
     change: "6.7%",
-    icon: getAssetPath("/assets/vector-1.svg"),
+    icon: getAssetPath("/assets/frame-2117937247-2.svg"),
     isNegative: true,
   },
   {
@@ -470,7 +470,7 @@ const heroTokens = [
     symbol: "ATOM",
   },
   {
-    icon: getAssetPath("/assets/image-34.png"),
+    icon: getAssetPath("/assets/frame-2117937247-2.svg"),
     symbol: "OASIS",
   },
 ];
