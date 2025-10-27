@@ -1,0 +1,312 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --description-font-family: "Aeonik", Helvetica;
+  --description-font-size: 14px;
+  --description-font-style: normal;
+  --description-font-weight: 400;
+  --description-letter-spacing: 0px;
+  --description-line-height: 24px;
+  --osmosis-zone-inter-medium-font-family: "Aeonik", Helvetica;
+  --osmosis-zone-inter-medium-font-size: 12px;
+  --osmosis-zone-inter-medium-font-style: normal;
+  --osmosis-zone-inter-medium-font-weight: 500;
+  --osmosis-zone-inter-medium-letter-spacing: -0.13199999928474426px;
+  --osmosis-zone-inter-medium-line-height: 16px;
+  --osmosiszonealto: rgba(217, 217, 217, 1);
+  --osmosiszoneamaranth: rgba(200, 88, 98, 1);
+  --osmosiszoneanakiwa: rgba(164, 252, 246, 1);
+  --osmosiszoneazure-radiance: rgba(0, 137, 255, 1);
+  --osmosiszoneblack: rgba(0, 0, 0, 1);
+  --osmosiszonebleach-white: rgba(238, 236, 234, 1);
+  --osmosiszoneblue-ribbon: rgba(87, 157, 196, 1);
+  --osmosiszonebrick-red: rgba(195, 41, 66, 1);
+  --osmosiszonebright-turquoise: rgba(1, 215, 235, 1);
+  --osmosiszonebuttercup: rgba(222, 194, 28, 1);
+  --osmosiszonecharade: rgba(45, 45, 61, 1);
+  --osmosiszonechiffon: rgba(235, 255, 191, 1);
+  --osmosiszonecinnabar: rgba(255, 42, 42, 1);
+  --osmosiszonecod-gray: rgba(18, 18, 18, 1);
+  --osmosiszonecoral: rgba(255, 123, 80, 1);
+  --osmosiszonecoral-red: rgba(255, 67, 62, 1);
+  --osmosiszonecornflower-blue-75: rgba(84, 147, 246, 0.75);
+  --osmosiszonecurious-blue: rgba(103, 119, 164, 1);
+  --osmosiszonedeep-sapphire: rgba(11, 48, 117, 1);
+  --osmosiszonedisco: rgba(120, 28, 109, 1);
+  --osmosiszonedodger-blue: rgba(75, 101, 255, 1);
+  --osmosiszonedune: rgba(35, 31, 31, 1);
+  --osmosiszoneebony-clay: rgba(40, 39, 80, 1);
+  --osmosiszoneelectric-violet: rgba(168, 53, 248, 1);
+  --osmosiszoneenergy-yellow: rgba(249, 216, 94, 1);
+  --osmosiszoneflamingo: rgba(200, 88, 98, 1);
+  --osmosiszonegeraldine: rgba(236, 164, 141, 1);
+  --osmosiszonegray-suit: rgba(183, 185, 200, 1);
+  --osmosiszonehokey-pokey: rgba(204, 167, 39, 1);
+  --osmosiszoneinch-worm: rgba(171, 226, 13, 1);
+  --osmosiszoneinternational-orange: rgba(255, 163, 0, 1);
+  --osmosiszonejaffa: rgba(254, 103, 32, 1);
+  --osmosiszonejagger: rgba(49, 12, 74, 1);
+  --osmosiszonejordy-blue: rgba(111, 188, 239, 1);
+  --osmosiszonelightning-yellow: rgba(248, 200, 29, 1);
+  --osmosiszonemalibu: rgba(154, 205, 225, 1);
+  --osmosiszonemandy: rgba(232, 74, 134, 1);
+  --osmosiszonemardi-gras: rgba(27, 9, 57, 1);
+  --osmosiszonemedium-purple: rgba(168, 53, 248, 1);
+  --osmosiszonemerlot: rgba(125, 23, 41, 1);
+  --osmosiszonemirage: rgba(27, 30, 54, 1);
+  --osmosiszonemorning-glory: rgba(126, 164, 248, 1);
+  --osmosiszonemountain-meadow: rgba(18, 187, 119, 1);
+  --osmosiszonemulberry: rgba(215, 20, 184, 1);
+  --osmosiszoneorange: rgba(254, 103, 32, 1);
+  --osmosiszoneparchment: rgba(248, 216, 205, 1);
+  --osmosiszoneperfume: rgba(205, 174, 250, 1);
+  --osmosiszoneperiwinkle: rgba(206, 203, 255, 1);
+  --osmosiszonepersian-blue-80: rgba(32, 67, 181, 0.8);
+  --osmosiszonepickled-bluewood: rgba(45, 55, 75, 1);
+  --osmosiszonepicton-blue: rgba(87, 157, 196, 1);
+  --osmosiszoneplum: rgba(138, 38, 126, 1);
+  --osmosiszonepurple: rgba(83, 0, 156, 1);
+  --osmosiszonerazzmatazz: rgba(233, 17, 121, 1);
+  --osmosiszonered-violet: rgba(192, 23, 123, 1);
+  --osmosiszoneripe-lemon: rgba(239, 232, 18, 1);
+  --osmosiszonerose: rgba(230, 0, 122, 1);
+  --osmosiszoneroyal-blue: rgba(104, 78, 236, 1);
+  --osmosiszoneroyal-blue-70: rgba(53, 115, 236, 0.7);
+  --osmosiszonestorm-gray: rgba(40, 51, 213, 1);
+  --osmosiszonestratos: rgba(0, 19, 71, 1);
+  --osmosiszonesunflower: rgba(229, 203, 34, 1);
+  --osmosiszonetall-poppy: rgba(195, 41, 66, 1);
+  --osmosiszonetree-poppy: rgba(252, 106, 24, 1);
+  --osmosiszonetuna: rgba(53, 53, 74, 1);
+  --osmosiszoneviolet: rgba(36, 10, 52, 1);
+  --osmosiszonewhite: rgba(255, 255, 255, 1);
+  --osmosiszonewild-sand: rgba(245, 245, 245, 1);
+  --osmosiszoneyour-pink: rgba(255, 205, 196, 1);
+  --subtitle-48-font-family: "Aeonik", Helvetica;
+  --subtitle-48-font-size: 48px;
+  --subtitle-48-font-style: normal;
+  --subtitle-48-font-weight: 500;
+  --subtitle-48-letter-spacing: -0.47999998927116394px;
+  --subtitle-48-line-height: 58px;
+  --subtitle-font-family: "Poppins", Helvetica;
+  --subtitle-font-size: 24px;
+  --subtitle-font-style: normal;
+  --subtitle-font-weight: 500;
+  --subtitle-letter-spacing: 0px;
+  --subtitle-line-height: 31px;
+  --text-font-family: "Aeonik", Helvetica;
+  --text-font-size: 16px;
+  --text-font-style: normal;
+  --text-font-weight: 400;
+  --text-letter-spacing: 0px;
+  --text-line-height: 24px;
+  --title-64-font-family: "Poppins", Helvetica;
+  --title-64-font-size: 64px;
+  --title-64-font-style: normal;
+  --title-64-font-weight: 500;
+  --title-64-letter-spacing: -1.2799999713897705px;
+  --title-64-line-height: 70px;
+  --title-72-font-family: "Poppins", Helvetica;
+  --title-72-font-size: 72px;
+  --title-72-font-style: normal;
+  --title-72-font-weight: 500;
+  --title-72-letter-spacing: -2.1600000858306885px;
+  --title-72-line-height: 80px;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
